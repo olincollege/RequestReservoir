@@ -18,7 +18,7 @@ POSIX-compatible operating system: The server uses POSIX system calls and should
 
 ## Usage
 1. Clone the repo to your local machine:
-   ```git clone https://github.com/alexiswu-01/requestreservoir```
+   ```git clone https://github.com/olincollege/RequestReservoir```
 2. complie the server using gcc:
    
     ```
