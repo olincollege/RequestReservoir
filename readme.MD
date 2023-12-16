@@ -16,6 +16,13 @@ Before you can use this HTTP server, make sure you have the following prerequisi
 GCC (GNU Compiler Collection): This server is written in C and needs a C compiler to build.
 POSIX-compatible operating system: The server uses POSIX system calls and should work on most Unix-like operating systems.
 
+## Dependencies
+This server depends on the following libraries:
+- arpa/inet.h
+- netinet/in.h
+- sys/socket.h
+
+
 ## Usage
 1. Clone the repo to your local machine:
 
