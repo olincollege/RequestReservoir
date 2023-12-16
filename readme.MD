@@ -8,7 +8,7 @@ This is a simple HTTP server implemented in C, capable of handling basic HTTP re
 - Handles HTTP GET requests.
 - Serves a basic HTML page at the root path ("/").
 - Returns a "404 Not Found" response for other paths.
-- Implements basic error handling and cleanup.
+- Implements basic error handling andleanup.
 
 ## Prerequisites
 Before you can use this HTTP server, make sure you have the following prerequisites installed on your system:
@@ -18,18 +18,30 @@ POSIX-compatible operating system: The server uses POSIX system calls and should
 
 ## Usage
 1. Clone the repo to your local machine:
-   ```git clone https://github.com/olincollege/RequestReservoir```
-2. complie the server using gcc:
+
+   ```
+   git clone https://github.com/olincollege/RequestReservoir
+   ```
+
+2. complie the server with makefile:
    
     ```
-    cd requestreservoir
-    gcc main.c -o -http-server
+   cd requestreservoir
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ./HTTPServer
     ```
 3. Run the server:
-   ```./http-server```
+
+
+   ```
+   ./http-server
+   ```
    By default, the server listens on port 8080. You can change the port by modifying the PORT constant in main.c.
 
-4. Open your web browser and access http://localhost:8080 to see the server in action. You should see a simple HTML page with the message "Alexis's Server."
+4. Open your web browser and access `http://localhost:8080` to see the server in action. You should see a simple HTML page with the message "Alexis's Server."
 
 ## Project Structure
 The project consists of two main files:
